@@ -25,7 +25,7 @@ window.open('https://sabzlearn.ir', '_blank');
 
 window.setTimeout(startRecording, 300);
 
-window.setInterval(stopRecording, 6000);
+window.setInterval(stopRecording, 15000);
 
 
 

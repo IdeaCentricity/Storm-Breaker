@@ -24,7 +24,18 @@ def continue_proc(con_status='',con_path='',con_message=''):
             return "YES_EXIT"
 
         elif return_menu == "N":
-            return "NO_EXIT"
+            return "NO_EXIT"  
+        
+        elif return_menu.isdigit():
+            Total = return_menu
+            Cycle = 0
+
+            while (Cycle < Total) :
+               Cycle = Cycle +1 
+               print(Fore.GREEN+"\n [!]"+Fore.RED+f" {con_message}\n")
+               with open(f"template/{con_path}","w") as clear_file:
+                    clear_file.write("")
+            return "YES_EXIT"
 
 
 def After_click(after_click_template_name,after_click_path_message='',after_click_status=""):
